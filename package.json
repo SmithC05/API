@@ -5,7 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "nodemon src/app.js",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build && node scripts/prepare-vercel-build.cjs"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
